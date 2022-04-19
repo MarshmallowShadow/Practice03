@@ -47,6 +47,7 @@ public class Ex20 {
 		sc.close();
 	}
 	
+	
 	public static boolean isExit(String s) {
 		if(s.equals("y") || s.equals("yes") || 
 				s.equals("yep") || s.equals("yeah") ||
