@@ -2,27 +2,6 @@ package com.javaex.practice;
 import java.util.*;
 
 public class Ex20 {
-	static boolean isExit(String s) {
-		if(s.equals("y") || s.equals("yes") || 
-				s.equals("yep") || s.equals("yeah") ||
-				s.equals("yea") || s.equals("네") ||
-				s.equals("예") || s.equals("넵") ||
-				s.equals("넹") || s.equals("ㅇㅇ")) {
-			return true;
-		}
-		else if(s.equals("n") || s.equals("no") ||
-				s.equals("nope") || s.equals("nu") ||
-				s.equals("fuck you") || s.equals("아니요") ||
-				s.equals("아니용") || s.equals("싫어요") ||
-				s.equals("싫어용") || s.equals("싫어") ||
-				s.equals("싫엉") || s.equals("꺼져") || 
-				s.equals("ㄴㄴ") || s.equals("ㅇ")) {
-			return false;
-		} else {
-			System.out.println("잘못입력하셨습니다");
-			return true;
-		}
-	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int guess;
@@ -34,7 +13,7 @@ public class Ex20 {
 			System.out.println("=======================");
 			System.out.println("  [숫자맞추기 게임 시작]   ");
 			System.out.println("=======================");
-			randNum = (int)(Math.random()*100);
+			randNum = (int)(Math.random()*100 + 1);
 			count = 0;
 			while(true) {
 				count ++;
@@ -66,5 +45,27 @@ public class Ex20 {
 		System.out.println("=======================");
 		
 		sc.close();
+	}
+	
+	public static boolean isExit(String s) {
+		if(s.equals("y") || s.equals("yes") || 
+				s.equals("yep") || s.equals("yeah") ||
+				s.equals("yea") || s.equals("네") ||
+				s.equals("예") || s.equals("넵") ||
+				s.equals("넹") || s.equals("ㅇㅇ")) {
+			return true;
+		}
+		else if(s.equals("n") || s.equals("no") ||
+				s.equals("nope") || s.equals("nu") ||
+				s.equals("fuck you") || s.equals("아니요") ||
+				s.equals("아니용") || s.equals("싫어요") ||
+				s.equals("싫어용") || s.equals("싫어") ||
+				s.equals("싫엉") || s.equals("꺼져") || 
+				s.equals("ㄴㄴ") || s.equals("ㅇ")) {
+			return false;
+		} else {
+			System.out.println("잘못입력하셨습니다");
+			return true;
+		}
 	}
 }

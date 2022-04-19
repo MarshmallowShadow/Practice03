@@ -28,7 +28,9 @@ public class Ex19 {
 			} else if(num == 4) {
 				break;
 			}
-			else System.out.println("다시입력해주세요;");
+			else {
+				System.out.println("다시입력해주세요");
+			}
 		}
 		
 		System.out.println("프로그램 종료...");

@@ -5,8 +5,8 @@ public class Ex08 {
 		int i;
 		int j;
 		
-		for(i=2; i<=9; i++) {
-			for(j=2; j<=9; j++) {
+		for(i=1; i<=9; i++) {
+			for(j=1; j<=9; j++) {
 				System.out.print(j + " * " + i + " = " + (i*j));
 				if(i*j < 10) System.out.print(" \t");
 				else System.out.print("\t");

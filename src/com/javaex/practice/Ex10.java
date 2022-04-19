@@ -10,8 +10,12 @@ public class Ex10 {
 		for(int i=0; i<5; i++) {
 			System.out.print("숫자를 입력하세요: ");
 			num = sc.nextInt();
-			if(i==0) high = num;
-			else if(num > high)  high = num;
+			if(i==0) {
+				high = num;
+			
+			} else if(num > high) {
+				high = num;
+			}
 		}
 		
 		System.out.println("최개값은 " + high + "입니다.");
