@@ -10,11 +10,11 @@ public class Ex11 {
 		int sum = 0;
 		
 		if(num%2 == 0) {
-			for(int i=0; i<=num; i++) {
+			for(int i=0; i<=num; i+=2) {
 				sum += i;
 			}
 		} else {
-			for(int i=1; i<=num; i++) {
+			for(int i=1; i<=num; i+=2) {
 				sum += i;
 			}
 		}
