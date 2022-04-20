@@ -13,7 +13,7 @@ public class Ex20 {
 			System.out.println("=======================");
 			System.out.println("  [숫자맞추기 게임 시작]   ");
 			System.out.println("=======================");
-			randNum = (int)(Math.random()*100 + 1);
+			randNum = (int)(Math.random()*100) + 1;
 			count = 0;
 			while(true) {
 				count ++;
